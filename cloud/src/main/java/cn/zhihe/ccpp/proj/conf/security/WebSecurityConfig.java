@@ -2,11 +2,12 @@ package cn.zhihe.ccpp.proj.conf.security;
 
 import cn.zhihe.ccpp.func.cst.WebConstant;
 import cn.zhihe.ccpp.proj.conf.whitelist.IgnoredUrlsProperties;
-import cn.zhihe.ccpp.proj.conf.security.jwt.AuthenticationFailHandler;
-import cn.zhihe.ccpp.proj.conf.security.jwt.AuthenticationSuccessHandler;
-import cn.zhihe.ccpp.proj.conf.security.jwt.JWTAuthenticationFilter;
-import cn.zhihe.ccpp.proj.conf.security.jwt.RestAccessDeniedHandler;
-import cn.zhihe.ccpp.proj.conf.security.permission.MyFilterSecurityInterceptor;
+import cn.zhihe.ccpp.proj.task.handler.AuthenticationFailHandler;
+import cn.zhihe.ccpp.proj.task.handler.AuthenticationSuccessHandler;
+import cn.zhihe.ccpp.proj.task.filter.JWTAuthenticationFilter;
+import cn.zhihe.ccpp.proj.task.handler.RestAccessDeniedHandler;
+import cn.zhihe.ccpp.proj.task.interceptor.MyFilterSecurityInterceptor;
+import cn.zhihe.ccpp.proj.task.service.imp.UserDetailsServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

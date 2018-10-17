@@ -2,6 +2,7 @@ package cn.zhihe.ccpp.proj.conf.interceptor;
 
 import cn.zhihe.ccpp.func.util.log.LOG;
 import cn.zhihe.ccpp.proj.conf.whitelist.IgnoredUrlsProperties;
+import cn.zhihe.ccpp.proj.task.interceptor.LimitRaterInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistration;

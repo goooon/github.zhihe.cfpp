@@ -1,4 +1,4 @@
-package cn.zhihe.ccpp.proj.conf.interceptor;
+package cn.zhihe.ccpp.proj.task.interceptor;
 
 import cn.zhihe.ccpp.func.cst.ExceptionConstant;
 import cn.zhihe.ccpp.func.util.exception.CfppException;
@@ -55,9 +55,9 @@ public class LimitRaterInterceptor extends HandlerInterceptorAdapter {
 
         LOG.D("--->请求控制URL:" + request.getMethod() + " : " + request.getRequestURI());
 
-        response.setHeader("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization,accessToken, Accept,X-Requested-With");
-        response.setHeader("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
-        response.setHeader("Access-Control-Allow-Origin", "*");
+//        response.setHeader("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization,accessToken, Accept,X-Requested-With");
+//        response.setHeader("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+//        response.setHeader("Access-Control-Allow-Origin", "*");
 
         if (request.getMethod().equals("OPTIONS")){
 

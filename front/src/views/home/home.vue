@@ -20,7 +20,7 @@
                         <Row class-name="made-child-con-middle" type="flex" align="middle">
                             <div>
                                 <b class="card-user-infor-name">{{ username }}</b>
-                                <p>X-Boot 欢迎您的使用</p>
+                                <p>欢迎您的使用</p>
                             </div>
                         </Row>
                         </Col>

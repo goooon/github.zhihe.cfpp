@@ -26,7 +26,7 @@ public class LOG {
         if(s_logger != null){
             if(debug){
                 StackTraceElement traceElement = (new Throwable()).getStackTrace()[1];
-                System.out.println("D: "+ msg + " at " + traceElement.getFileName() +":" + traceElement.getLineNumber() + " " + traceElement.getMethodName() +"()");
+                System.out.println("D: "+ msg + " at " + traceElement.getMethodName() +"() " + traceElement.getFileName() +":" + traceElement.getLineNumber());
             }
             else{
                 System.out.println("D: " + msg);
@@ -46,7 +46,7 @@ public class LOG {
         if(s_logger != null){
             if(debug){
                 StackTraceElement traceElement = (new Throwable()).getStackTrace()[1];
-                System.out.println("I: "+ msg + " at " + traceElement.getFileName() +":" + traceElement.getLineNumber() + " " + traceElement.getMethodName() +"()");
+                System.out.println("I: "+ msg + " at " + traceElement.getMethodName() +"() " + traceElement.getFileName() +":" + traceElement.getLineNumber());
             }
             else{
                 System.out.println("I: " + msg);
@@ -58,7 +58,7 @@ public class LOG {
         if(s_logger != null){
             if(debug){
                 StackTraceElement traceElement = (new Throwable()).getStackTrace()[1];
-                System.out.println("W: " + msg + " at " + traceElement.getFileName() +":" + traceElement.getLineNumber() + " " + traceElement.getMethodName() +"()");
+                System.out.println("W: "+ msg + " at " + traceElement.getMethodName() +"() " + traceElement.getFileName() +":" + traceElement.getLineNumber());
             }
             else {
                 System.out.println("W: " +msg);
@@ -70,7 +70,7 @@ public class LOG {
         if(s_logger !=null){
             if(debug) {
                 StackTraceElement traceElement = (new Throwable()).getStackTrace()[1];
-                System.out.println("E: " + msg + " at " + traceElement.getFileName() +":" + traceElement.getLineNumber() + " " + traceElement.getMethodName() +"()");
+                System.out.println("E: "+ msg + " at " + traceElement.getMethodName() +"() " + traceElement.getFileName() +":" + traceElement.getLineNumber());
             }
             else {
                 System.out.println("E: " + msg);

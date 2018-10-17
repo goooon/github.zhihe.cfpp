@@ -1,4 +1,4 @@
-package cn.zhihe.ccpp.proj.conf.security;
+package cn.zhihe.ccpp.proj.conf.security.permission;
 
 import cn.zhihe.ccpp.func.cst.CommonConstant;
 import cn.zhihe.ccpp.proj.data.det.Permission;
@@ -18,11 +18,11 @@ import java.util.List;
  * @author Exrickx
  */
 @Slf4j
-public class SecurityUserDetails extends User implements UserDetails {
+public class MySecurityUserDetails extends User implements UserDetails {
 
     private static final long serialVersionUID = 1L;
 
-    public SecurityUserDetails(User user) {
+    public MySecurityUserDetails(User user) {
 
         if(user!=null) {
             this.setUsername(user.getUsername());

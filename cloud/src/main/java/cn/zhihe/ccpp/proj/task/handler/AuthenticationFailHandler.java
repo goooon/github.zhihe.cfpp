@@ -1,4 +1,4 @@
-package cn.zhihe.ccpp.proj.conf.security.jwt;
+package cn.zhihe.ccpp.proj.task.handler;
 
 import cn.zhihe.ccpp.func.cst.ResponseString;
 import cn.zhihe.ccpp.func.util.exception.LoginFailLimitException;
@@ -51,7 +51,7 @@ public class AuthenticationFailHandler extends SimpleUrlAuthenticationFailureHan
             //获取已登录错误次数
             int loginFailTime = Integer.parseInt(value);
             int restLoginTime = loginTimeLimit - loginFailTime;
-            LOG.I("user:" + username + "login failed，and has " + restLoginTime + " chance");
+            LOG.I("user:'" + username + "' login failed，and has " + restLoginTime + " chance");
             if(restLoginTime<=3&&restLoginTime>0){
                 ResponseUtil.out(response, ResponseUtil.resultMap(false,500,String.format(ResponseString.MAX_USERNAME_OR_PASSWORD,restLoginTime)));
             } else if(restLoginTime<=0) {

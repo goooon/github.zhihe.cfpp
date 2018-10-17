@@ -1,7 +1,8 @@
-package cn.zhihe.ccpp.proj.conf.security;
+package cn.zhihe.ccpp.proj.task.service.imp;
 
 import cn.zhihe.ccpp.func.cst.ExceptionConstant;
 import cn.zhihe.ccpp.func.util.log.LOG;
+import cn.zhihe.ccpp.proj.conf.security.permission.MySecurityUserDetails;
 import cn.zhihe.ccpp.proj.data.det.User;
 import cn.zhihe.ccpp.func.util.exception.LoginFailLimitException;
 import cn.zhihe.ccpp.proj.task.service.def.IUserService;
@@ -43,6 +44,6 @@ public class UserDetailsServiceImpl implements UserDetailsService{
         if(user == null){
             LOG.W("can not get username : " + username);
         }
-        return new SecurityUserDetails(user);
+        return new MySecurityUserDetails(user);
     }
 }

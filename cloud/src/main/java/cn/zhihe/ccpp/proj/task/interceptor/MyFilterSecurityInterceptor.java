@@ -1,6 +1,7 @@
-package cn.zhihe.ccpp.proj.conf.security.permission;
+package cn.zhihe.ccpp.proj.task.interceptor;
 
 import cn.zhihe.ccpp.func.util.log.LOG;
+import cn.zhihe.ccpp.proj.conf.security.permission.MyAccessDecisionManager;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.SecurityMetadataSource;
